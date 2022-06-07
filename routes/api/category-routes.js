@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 	  res.status(200).json(categoryData)
   }
   catch(err){
-	  res.status(500).json(err)
+	  res.status(400).json(err)
   }
 });
 
@@ -29,7 +29,7 @@ router.get('/:id', async (req, res) => {
 	  res.status(200).json(categoryById)
   }
   catch(err){
-	  res.status(500).json(err)
+	  res.status(400).json(err)
   }
 });
 
@@ -42,7 +42,7 @@ router.post('/', async (req, res) => {
 		res.status(200).json(categoryData)
 	}
 	catch(err){
-		res.status(500).json(err)
+		res.status(400).json(err)
 	}
 });
 
@@ -57,7 +57,7 @@ router.put('/:id', async (req, res) => {
 	  res.status(200).json(updatedData)
   	}
 	catch(err){
-		res.status(500).json(err)
+		res.status(400).json(err)
 	}
 });
 
@@ -72,7 +72,7 @@ router.delete('/:id', async (req, res) => {
 	  res.status(200).json(updatedData)
   }
   catch(err){
-	  res.status(500).json(err)
+	  res.status(400).json(err)
   }
 });
 
